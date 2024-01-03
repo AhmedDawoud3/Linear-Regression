@@ -39,7 +39,7 @@ This will install all the Python packages needed to run lreg.py.
 
 ```python
 import pandas as pd
-from sklearn.linear_model import LinearRegression
+from lreg import LinearRegression
 
 # Load the dataset
 data = pd.read_csv("train.csv")
