@@ -22,7 +22,7 @@ git clone https://github.com/AhmedDawoud3/Linear-Regression
 Change into the project directory:
 
 ```bash
-cd linear-regression-model
+cd Linear-Regression
 ```
 
 To install the necessary dependencies, run the following command:
