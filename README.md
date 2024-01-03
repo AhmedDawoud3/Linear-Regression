@@ -46,18 +46,18 @@ data = pd.read_csv("train.csv")
 
 # Initialize and train the linear regression model
 model = LinearRegression()
-model.fit(data[["x"]], data["y"])
+model.fit(data[x"], data["y"])
 
 # Get the slope and intercept of the model
-model_slope = round(model.coef_[0], 4)
-model_intercept = round(model.intercept_, 4)
+model_slope = round(model.slope_(), 4)
+model_intercept = round(model.intercept_(), 4)
 print(f"{model_slope=}, {model_intercept=}")
 # Output: model_slope=1.0007, model_intercept=-0.1073
 
 # Make a prediction for a new input (e.g., x=6)
-prediction = model.predict([[6]])
+prediction = model.predict(6)
 print(f"{prediction=}")
-# Output: prediction=array([5.89667283])
+# Output: prediction=5.896672826836847
 ```
 
 This example demonstrates loading a dataset from a CSV file, training a linear regression model, and making a prediction for a new input (in this case, x=6).
